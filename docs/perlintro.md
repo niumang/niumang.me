@@ -5,14 +5,14 @@ prev_section: perlbook
 next_section: perlopentut
 permalink: /docs/perlintro/
 ---
-<div class="note">
+<div class="note ">
     <h5>perlintro</h5>
     <p>
-    Perl 介绍
+    Perl基本语法
     </p>
 </div>
+<div id="toc"> </div><br>
 
-<div id="toc"></div>
 
 # NAME 
 

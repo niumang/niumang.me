@@ -11,6 +11,7 @@ permalink: /docs/perlopentut/
     Perl 中 open 的指南,有关于sysopen，open，socket,pipe的介绍.
     </p>
 </div>
+<div id="toc"> </div><br>
 
 # DESCRIPTION
 

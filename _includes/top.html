@@ -13,8 +13,29 @@
   <link rel="stylesheet" href="{{ site.url }}/css/style.css" />
   <link rel="stylesheet" href="{{ site.url }}/css/pygments.css" />
   <link rel="stylesheet" href="{{ site.url }}/css/duoshuo.css" />
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+     $("article > h1,h2,h3").each(function(i,item){
+        var tag = $(item).get(0).localName;
+        $(item).attr("id","wow"+i);
+        $("#toc").append('<li><a class="new'+tag+'" href="#wow'+i+'">'+$(this).text()+'</a></li>');
+        $(".newh1").css("margin-left",0);
+        $(".newh2").css("margin-left",20);
+        $(".newh3").css("margin-left",40);
+      });
+ });
+ $(document).ready(function(){
+     $("article > h1,h2,h3").each(function(i,item){
+        $(item).html('<a href="#wow0">'+$(this).text()+'</a>');
+     });
+ });
+ $(document).ready(function(){
+     $("code").each(function(i,item){
+        $(item).attr("class","perl");
+      });
+ });
+  </script>
 
-  <link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.png" />
-  <script src="{{ site.url }}/js/modernizr-2.5.3.min.js"></script>
-</script>
 </head>
+
